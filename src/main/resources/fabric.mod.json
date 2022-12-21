@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "explosion_griefing_gamerule",
+  "version": "0.0.1",
+
+  "name": "Explosion Griefing Gamerule",
+  "description": "A server-side mod that adds ability to control explosion griefing separately from mob griefing",
+  "authors": [
+    "enecske"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Enecske/explosion_griefing_gamerule",
+    "sources": "https://github.com/Enecske/explosion_griefing_gamerule",
+    "issues": "https://github.com/Enecske/explosion_griefing_gamerule",
+    "wiki": "https://github.com/Enecske/explosion_griefing_gamerule"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/explosion_griefing_gamerule/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.enecske.explosion_griefing_gamerule.ExplosionGriefingGamerule"
+    ]
+  },
+  "mixins": [
+    "explosion_griefing_gamerule.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
